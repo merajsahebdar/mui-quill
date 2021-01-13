@@ -10,14 +10,14 @@ import {
   useState,
 } from 'react';
 import Quill, {Sources, RangeStatic} from 'quill';
-import Delta from 'quill-delta';
+import type Delta from 'quill-delta';
 import invariant from 'tiny-invariant';
 import clsx from 'clsx';
 import isEqual from 'lodash/isEqual';
 
-import postpone from '../../utils/postpone';
-import useEnhancedEffect from '../../utils/useEnhancedEffect';
 import RichInputToolbar from '../RichInputToolbar';
+import postpone from '../utils/postpone';
+import useEnhancedEffect from '../utils/useEnhancedEffect';
 import useQuillStyles from './styles/quill';
 
 // Quill Options

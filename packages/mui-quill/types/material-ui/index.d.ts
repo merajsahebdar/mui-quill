@@ -1,4 +1,4 @@
-import {ComponentType, FieldsetHTMLAttributes} from 'react';
+import type {ComponentType, FieldsetHTMLAttributes} from 'react';
 
 declare module '@material-ui/core/OutlinedInput/NotchedOutline' {
   export interface NotchedOutlineProps extends FieldsetHTMLAttributes<HTMLFieldSetElement> {
@@ -9,5 +9,6 @@ declare module '@material-ui/core/OutlinedInput/NotchedOutline' {
     labelWidth: number;
     notched: boolean;
   }
-  export default interface NotchedOutline extends ComponentType<NotchedOutlineProps> {}
+  type NotchedOutline = ComponentType<NotchedOutlineProps>;
+  export default NotchedOutline;
 }

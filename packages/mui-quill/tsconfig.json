@@ -6,24 +6,26 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
     "moduleResolution": "node",
-    "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "outDir": "./dist"
+  },
+  "paths": {
+    "material-ui": ["types/material-ui/index.d.ts"]
   },
   "include": [
-    "src"
+    "./src",
+    "./types"
   ],
-  "paths": {
-    "material-ui": ["src/app/types/material-ui/index.d.ts"]
-  }
+  "exclude": ["node_modules"]
 }

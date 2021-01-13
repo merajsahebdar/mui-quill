@@ -88,14 +88,6 @@ const defaultTheme = createMuiTheme({
   shape: {
     borderRadius: 6,
   },
-  props: {
-    MuiButton: {
-      disableElevation: true,
-      disableRipple: true,
-      disableFocusRipple: true,
-      disableTouchRipple: true,
-    },
-  },
   overrides: {
     MuiCardHeader: {
       root: {
