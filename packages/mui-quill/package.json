@@ -1,8 +1,11 @@
 {
   "name": "mui-quill",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "private": false,
   "license": "MIT",
+  "homepage": "https://github.com/merajsahebdar/mui-quill",
+  "bugs": "https://github.com/merajsahebdar/mui-quill/issues",
+  "repository": "https://github.com/merajsahebdar/mui-quill.git",
   "author": {
     "name": "Meraj Sahebdar",
     "url": "https://merajsahebdar.com"

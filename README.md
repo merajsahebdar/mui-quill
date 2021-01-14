@@ -2,10 +2,30 @@
 
 *Based on [Quill][quill]*
 
-## Installation
+## Installation and Usage
 
 ```sh
 npm install mui-quill
+```
+
+```tsx
+import {RichTextField} from 'mui-quill';
+import {useState} from 'react';
+
+export default function App() {
+  const [value, setValue] = useState('');
+
+  return (
+    <RichTextField
+      value={value}
+      onChange={(nextValue) => setValue(nextValue)}
+      variant="outlined"
+      options={{
+        toolbar: true
+      }}
+    />
+  );
+}
 ```
 
 ## Todo
